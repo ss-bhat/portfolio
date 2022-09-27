@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swaroop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            color: #c7c2c2;
+            margin:0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #F9AB55;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            text-align: justify;
+        }
+        .add-margin-top {
+            margin-top: 2rem;
+        }
+        .hero, .row-section {
+            display: flex;
+        }
+        .hero .profile-pic {
+            background-image: linear-gradient(to bottom, rgb(255 255 255 / 2%), rgb(0 0 0 / 53%)), url(profile-pic.png);
+            background-size: cover;
+            min-width: 55%;
+            max-width: 55%;
+            height: 100vh;
+            filter: grayscale(100%);
+        }
+        .hero .right-section {
+            box-sizing: border-box;
+            min-width: 45%;
+            padding: 8rem;
+            margin: auto;
+        }
+        .name-title h1 {
+            font-size: 7rem;
+            color: #ffff;
+            margin: 0;
+        }
+        .name-title h2 {
+            font-size: 3rem;
+            color: #ffff;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .hero hr {
+            width: 70px;
+            margin-left:0;
+            margin: 0;
+            border: 3px solid #ffff;
+        }
+        .hero .name-title {
+            position: absolute;
+            left: 30px
+        }
+        .align-right {
+            float: right;
+        }
+        i {
+            font-size: xx-large;
+        }
+        .row-section section {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            text-align: justify;
+        }
+        .contents {
+            padding: 5rem;
+            height: 100%;
+            box-sizing: border-box;
+            margin: auto;
+            align-items: center;
+            display: flex;
+        }
+        .width-55 {
+            min-width: 55%;
+        }
+        .width-45 {
+            min-width: 45%;
+        }
+        .row-section .light-section {
+            background: #F9AB55;
+            color: #000000;
+        }
+        .row-section .light-section h2, .row-section .light-section h1 {
+            color: #000000;
+        }
+        .remove-bottom-margin {
+            margin-bottom: 0;
+        }
+        .remove-top-margin {
+            margin-top: 0;
+        }
+        .light-section hr {
+            width: 30px;
+            margin: 0;
+            border: 2px solid #000000;
+        }
+        .light-section p {
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        .light-section h1 {
+            padding: 0.5rem;
+        }
+        .company-section {
+            flex: auto;
+            width: 50%;
+        }
+        .company-section ul {
+          list-style: none;
+          padding-right: 3rem;
+        }
+        .company-section ul li::before {
+          content: "";
+          border: 1px solid #000000;
+          margin-right: 0.5rem;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 2rem;
+        }
+        .cards .card-item {
+            margin-left: 1.5rem;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+        }
+        .cards .card-item a {
+            color: #ffff;
+        }
+        .quotes {
+            color: #F9AB55;
+        }
+        .quote-text {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: 0;
+            font-style: italic;
+        }
+        .quote-right {
+            text-align: end;
+        }
+        .quote-by a {
+            color: #F9AB55 !important;
+            font-style: italic;
+        }
+        .quote-by-position {
+            color: #F9AB55;
+            font-style: italic;
+            font-size: 1rem;
+        }
+        .contacts {
+            justify-content: center;
+            flex-direction: column;
+            position: fixed;
+            top: 40%;
+            left: 0;
+        }
+        .companies {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content-item {
+            min-width: 100%;
+        }
+        @media (min-width: 320px) and (max-width: 1224px) {
+            .profile-pic {
+                display: none;
+            }
+            .hero .name-title, .hero .right-section {
+                padding: 5rem;
+            }
+            .hero .name-title {
+                position: relative;
+                left: auto;
+            }
+            .hero, .row-section {
+                display: block;
+            }
+           
+            .row-section.row2 {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="profile-pic"></div>
+        <div class="name-title">
+            <h1>Swaroop Bhat</h1>
+            <h2>Senior Backend Engineer</h2>
+            <hr>
+        </div>
+        <div class="right-section">
+            <h1>Senior Backend Engineer based in Berlin.</h1>
+            <div class="content">
+                <P>
+                    Professional, detail-oriented software engineer with 5+ years of experience in 
+                    delivering quality code across different domains. Well-versed in developing cutting-edge APIs, 
+                    microservices, and in-depth knowledge of Artificial intelligence, looking forward to 
+                    playing a key role in creating a positive impact on an organization.
+                </P>
+            </div>
+        </div>
+    </section>
+    <section class="row-section row1">
+        <section class="dark-section width-55">
+            <div class="contents">
+                <div class="content-item">
+                    <h1 class="remove-bottom-margin">Highlights</h1>
+                    <ul>
+                        <li>Proficient in writing secure, well-tested code that 10000+ vendors are currently using to order their products.</li>
+                        <li>Provided out-of-the-box solutions to several complex problems.</li>
+                        <li>Experienced in mentoring and communicating technical solutions to all audience levels.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="light-section width-45">
+            <div class="contents">
+                <div class="content-item">
+                    <h1 class="remove-top-margin"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h1>
+                    <div class="companies">
+                        <div class="company-section">
+                            <h3 class="remove-bottom-margin remove-top-margin">Orderbird AG</h3>
+                            <h4 class="remove-top-margin remove-bottom-margin">Senior Software Engineer</h4>
+                            <hr>
+                            <p class="remove-top-margin">October 2022 - Present (Berlin, Germany)</p>
+                        </div>
+                        <div class="company-section">
+                            <h3 class="remove-bottom-margin remove-top-margin">Delivery Hero SE</h3>
+                            <h4 class="remove-top-margin remove-bottom-margin">Software Engineer</h4>
+                            <hr>
+                            <p class="remove-top-margin">August 2021 - September 2022 (Berlin, Germany)</p>
+                        </div>
+                        <div class="company-section">
+                            <h3 class="remove-bottom-margin remove-top-margin">Derilinx Ltd.</h3>
+                            <h4 class="remove-top-margin remove-bottom-margin">Software Engineer</h4>
+                            <hr>
+                            <p class="remove-top-margin">October 2018 - July 2021 (Dublin, Ireland)</p>
+                        </div>
+                        <div class="company-section">
+                            <h3 class="remove-bottom-margin remove-top-margin">Tata Consultancy Services Ltd.</h3>
+                            <h4 class="remove-top-margin remove-bottom-margin">System Engineer</h4>
+                            <hr>
+                            <p class="remove-top-margin">June 2014 - July 2017 (Mumbai, India)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="row-section row2">
+        <section class="light-section width-55">
+            <div class="contents">
+                <div class="content-item">
+                    <h1 class="remove-top-margin remove-bottom-margin"><i class="fa fa-cogs" aria-hidden="true"></i> Core Competencies</h1>
+                    <div class="companies">
+                        <div class="company-section">
+                            <ul>
+                                <li>Python</li>
+                                <li>Google Cloud</li>
+                                <li>AWS</li>
+                                <li>REST Architecture</li>
+                                <li>Microservices Design Patterns</li>
+                                <li>Software Design Patterns</li>
+                                <li>Code Review and Debugging</li>
+                            </ul>
+                        </div>
+                        <div class="company-section">
+                            <ul>
+                                <li>Effective Communication</li>
+                                <li>Active listening</li>
+                                <li>Teamwork</li>
+                                <li>Ownership</li>
+                                <li>Leadership</li>
+                                <li>Problem Solving</li>
+                                <li>Empathy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dark-section width-45">
+            <div class="contents">
+                <div class="content-item">
+                    <h5 class="quotes remove-bottom-margin remove-top-margin"><i class="fa fa-quote-left" aria-hidden="true"></i></h5>
+                    <p class="quote-text">
+                        I had the pleasure to work with Swaroop during his time with Derilinx. 
+                        Swaroop showed incredible ability to over deliver against customer requirements, 
+                        learn new technologies and techniques at lightening speed. He was also an valued team member 
+                        who was always happy to support colleagues when they were blocked. He is an incredible software 
+                        developer! If you have an opportunity to work with him, take it!
+                    </p>
+                    <h5 class="quotes quote-right remove-bottom-margin remove-top-margin"><i class="fa fa-quote-right" aria-hidden="true"></i></h5>
+                    <h4 class="quote-by remove-bottom-margin remove-top-margin"><a href="https://www.linkedin.com/in/pierrebaviera/">Pierre-Henri Baviera</a></h4>
+                    <p class="quote-by-position remove-top-margin">
+                        CEO at MIAS Pharma LimitedChief Executive Officer at MIAS Pharma Limited - Ireland
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section>
+        <div class="cards contacts">
+            <div class="card-item">
+                <a target="_blank" href="mailto:swaroopbhatk@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </div>
+            <div class="card-item">
+                <a target="_blank" href="tel:+4915206564514"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+            <div class="card-item">
+                <a target="_blank" href="https://www.linkedin.com/in/swaroop-shubhakrishna/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+            <div class="card-item">
+                <a target="_blank" href="https://github.com/ss-bhat"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
