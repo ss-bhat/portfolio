@@ -24,7 +24,7 @@
         h2 {
             font-size: 2rem;
         }
-        p, ul {
+        p, ul, li {
             font-size: 1.2rem;
             line-height: 2rem;
             text-align: justify;
@@ -78,7 +78,6 @@
             font-size: xx-large;
         }
         .row-section section {
-            font-size: 1.2rem;
             line-height: 2.5rem;
             text-align: justify;
         }
@@ -116,7 +115,7 @@
             border: 2px solid #1a1a1a;
         }
         .small-section p:nth-child(2) {
-            line-height: 0.5rem;
+            line-height: 1rem;
         }
         .company-section {
             flex: auto;
@@ -225,6 +224,16 @@
                 display: flex;
                 flex-direction: column-reverse;
             }
+            p, ul, li, .quote-by-position {
+                font-size: 1.5rem;
+            }
+            .cards {
+                font-size: 3rem;
+                margin-top: 10px;
+            }
+            .cards .card-item {
+                margin-left: 1rem;
+            }
         }
     </style>
     <script>
@@ -286,7 +295,7 @@
                 <div class="content-item">
                     <h1 class="remove-top-margin apply-animation-heading"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Highlights</h1>
                      <div class="companies apply-animation-content">
-                        <div class="company-section">
+                        <div>
                             <ul>
                                 <li>Proficient in writing secure, fault-tolerant, and well-tested code that 10000+ vendors use to order their products.</li>
                                 <li>Provided out-of-the-box solutions to several complex problems.</li>
@@ -303,8 +312,8 @@
                     <h1 class="remove-top-margin apply-animation-heading"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h1>
                     <div class="companies apply-animation-content">
                         <div class="company-section">
-                            <h3 class="remove-bottom-margin remove-top-margin">Orderbird AG</h3>
-                            <h4 class="remove-top-margin remove-bottom-margin">Senior Software Engineer</h4>
+                            <h2 class="remove-bottom-margin remove-top-margin">Orderbird AG</h2>
+                            <h3 class="remove-top-margin remove-bottom-margin">Senior Software Engineer</h3>
                             <hr>
                             <div class="small-section">
                                 <p class="quote-by-position remove-top-margin apply-animation-content remove-bottom-margin">October 2022 - Present</p>
@@ -312,8 +321,8 @@
                             </div>
                         </div>
                         <div class="company-section">
-                            <h3 class="remove-bottom-margin remove-top-margin">Delivery Hero SE</h3>
-                            <h4 class="remove-top-margin remove-bottom-margin">Software Engineer</h4>
+                            <h2 class="remove-bottom-margin remove-top-margin">Delivery Hero SE</h2>
+                            <h3 class="remove-top-margin remove-bottom-margin">Software Engineer</h3>
                             <hr>
                             <div class="small-section">
                                 <p class="quote-by-position remove-top-margin apply-animation-content remove-bottom-margin">August 2021 - September 2022</p>
@@ -321,8 +330,8 @@
                             </div>
                         </div>
                         <div class="company-section">
-                            <h3 class="remove-bottom-margin remove-top-margin">Derilinx Ltd.</h3>
-                            <h4 class="remove-top-margin remove-bottom-margin">Software Engineer</h4>
+                            <h2 class="remove-bottom-margin remove-top-margin">Derilinx Ltd.</h2>
+                            <h3 class="remove-top-margin remove-bottom-margin">Software Engineer</h3>
                             <hr>
                             <div class="small-section">
                                 <p class="quote-by-position remove-top-margin apply-animation-content remove-bottom-margin">October 2018 - July 2021</p>
@@ -330,8 +339,8 @@
                             </div>
                         </div>
                         <div class="company-section">
-                            <h3 class="remove-bottom-margin remove-top-margin">TCS Ltd.</h3>
-                            <h4 class="remove-top-margin remove-bottom-margin">System Engineer</h4>
+                            <h2 class="remove-bottom-margin remove-top-margin">TCS Ltd.</h2>
+                            <h3 class="remove-top-margin remove-bottom-margin">System Engineer</h3>
                             <hr>
                             <div class="small-section">
                                 <p class="quote-by-position remove-top-margin apply-animation-content remove-bottom-margin">June 2014 - July 2017</p>
@@ -357,7 +366,7 @@
                         developer! If you have an opportunity to work with him, take it!
                     </p>
                     <h5 class="quotes quote-right remove-bottom-margin remove-top-margin apply-animation-content"><i class="fa fa-quote-right" aria-hidden="true"></i></h5>
-                    <h5 class="quote-by remove-bottom-margin remove-top-margin apply-animation-content"><a href="https://www.linkedin.com/in/pierrebaviera/">Pierre-Henri Baviera</a></h5>
+                    <h3 class="quote-by remove-bottom-margin remove-top-margin apply-animation-content"><a href="https://www.linkedin.com/in/pierrebaviera/">Pierre-Henri Baviera</a></h3>
                     <p class="quote-by-position remove-top-margin apply-animation-content">
                         CEO at MIAS Pharma LimitedChief Executive Officer at MIAS Pharma Limited - Ireland
                     </p>
@@ -371,7 +380,7 @@
                         Also, he owned the cross-functional topics really well. Wishing him the best!
                     </p>
                     <h5 class="quotes quote-right remove-bottom-margin remove-top-margin apply-animation-content"><i class="fa fa-quote-right" aria-hidden="true"></i></h5>
-                    <h5 class="quote-by remove-bottom-margin remove-top-margin apply-animation-content"><a href="https://www.linkedin.com/in/pierrebaviera/">Kashif Nihal</a></h5>
+                    <h3 class="quote-by remove-bottom-margin remove-top-margin apply-animation-content"><a href="https://www.linkedin.com/in/pierrebaviera/">Kashif Nihal</a></h3>
                     <p class="quote-by-position remove-top-margin apply-animation-content">
                         Head of Product, Trading at Zalando - Germany
                     </p>
