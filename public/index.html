@@ -113,6 +113,9 @@
             display: flex;
             text-align: left;
         }
+        ul {
+            padding-left: 0px;
+        }
         .width-55 {
             min-width: 55%;
         }
@@ -201,6 +204,7 @@
             position: fixed;
             top: 40%;
             left: 0;
+            z-index; 10000;
             text-align: center;
         }
         .companies {
@@ -232,8 +236,8 @@
             .profile-pic {
                 display: none;
             }
-            .hero .name-title, .hero .right-section {
-                padding: 5rem;
+            .hero .name-title, .hero .right-section, .contents {
+                padding: 3rem;
             }
             .hero .name-title {
                 position: relative;
@@ -247,15 +251,34 @@
                 display: flex;
                 flex-direction: column-reverse;
             }
-            p, ul, li, .quote-by-position {
-                font-size: 1.5rem;
-            }
             .cards {
-                font-size: 3rem;
                 margin-top: 10px;
             }
             .cards .card-item {
-                margin-left: 1rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                font-size: 1.5rem;
+            }
+            .name-title h1 {
+                font-size: 4rem;
+            }
+            .name-title h2 {
+                font-size: 2.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            p, ul, li, .quote-by-position {
+                font-size: 1rem;
+            }
+            .small-section p {
+                text-align: left;
             }
         }
     </style>
