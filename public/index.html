@@ -17,7 +17,7 @@
                     I help your project? Contact me by my email."/>
     <meta property="og:title" content="Swaroop Shubhakrishna Bhat Portfolio" />
     <meta property="og:url" content="https://portfolio.ssbhat.info/" />
-    <meta property="og:image" content="https://portfolio.ssbhat.info/profile-pic-thumbnail-grey.jpg"/>
+    <meta property="og:image" content="./profile-pic-thumbnail-grey.jpg"/>
     <meta property="og:image:width" content="500" />
     <meta property="og:image:height" content="500" />
     <meta property="og:type" content="article" />
@@ -31,259 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #1a1a1a;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 1rem;
-            color: #c7c2c2;
-            margin:0;
-            padding: 0;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #F9AB55;
-        }
-        h2 {
-            font-size: 2rem;
-        }
-        p, ul, li {
-            font-size: 1.2rem;
-            line-height: 2rem;
-        }
-        .add-margin-top {
-            margin-top: 2rem;
-        }
-        .hero, .row-section {
-            display: flex;
-        }
-        .hero .profile-pic {
-            background-image: linear-gradient(to bottom, rgb(255 255 255 / 2%), rgb(0 0 0 / 53%)), url(profile-pic.png);
-            background-size: cover;
-            min-width: 55%;
-            max-width: 55%;
-            height: 100vh;
-            filter: grayscale(100%);
-        }
-        .hero .right-section {
-            box-sizing: border-box;
-            min-width: 45%;
-            min-height: 100%;
-            padding: 5rem;
-            margin: auto;
-        }
-        .name-title h1 {
-            font-size: 6rem;
-            color: #ffff;
-            margin: 0;
-        }
-        .name-title h2 {
-            font-size: 3rem;
-            color: #ffff;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-        .hero hr {
-            width: 70px;
-            margin-left:0;
-            margin: 0;
-            border: 3px solid #ffff;
-        }
-        .hero .name-title {
-            position: absolute;
-            left: 30px
-        }
-        .align-right {
-            float: right;
-        }
-        i {
-            font-size: xx-large;
-        }
-        .row-section section {
-            line-height: 2.5rem;
-            text-align: justify;
-        }
-        .contents {
-            padding: 5rem;
-            height: 100%;
-            box-sizing: border-box;
-            margin: auto;
-            align-items: center;
-            display: flex;
-            text-align: left;
-        }
-        .summary {
-            text-align: justify;
-        }
-        ul {
-            padding-left: 0px;
-        }
-        .width-55 {
-            min-width: 55%;
-        }
-        .width-45 {
-            min-width: 45%;
-        }
-        .row-section .light-section {
-            background: #F9AB55;
-            color: #1a1a1a;
-        }
-        .row-section .light-section h2, .row-section .light-section h1 {
-            color: #1a1a1a;
-        }
-        .remove-bottom-margin {
-            margin-bottom: 0;
-        }
-        .remove-top-margin {
-            margin-top: 0;
-        }
-        .light-section hr {
-            width: 30px;
-            margin: 0;
-            border: 2px solid #1a1a1a;
-        }
-        .small-section p:nth-child(2) {
-            line-height: 1rem;
-        }
-        .company-section {
-            flex: auto;
-            width: 50%;
-        }
-        .company-section ul {
-          list-style: none;
-          padding-left: 0px;
-        }
-        .company-section ul li::before {
-          content: "";
-          border: 1px solid #F9AB55;
-          margin-right: 0.5rem;
-        }
-        .flex-list {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .flex-list li {
-            margin-right: 1rem;
-            margin-bottom: 1rem;
-        }
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 2rem;
-        }
-        .cards .card-item {
-            margin-left: 1.5rem;
-            margin-right: 2rem;
-            margin-bottom: 1rem;
-        }
-        .cards .card-item a {
-            color: #ffff;
-        }
-        .quotes {
-            color: #1a1a1a;
-        }
-        .quote-text {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            margin: 0;
-            font-style: italic;
-        }
-        .quote-right {
-            text-align: end;
-        }
-        .quote-by a {
-            color: #1a1a1a !important;
-            font-style: italic;
-        }
-        .quote-by-position {
-            color: #1a1a1a;
-            font-style: italic;
-            font-size: 1rem;
-        }
-        .contacts {
-            justify-content: center;
-            flex-direction: column;
-            position: fixed;
-            top: 40%;
-            left: 0;
-            z-index; 10000;
-            text-align: center;
-        }
-        .companies {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .content-item {
-            min-width: 100%;
-            min-height: 100%;
-        }
-
-        .animation-content {
-            opacity: 0;
-            animation: animation1 0.75 ease-out 2s forwards;
-        }
-
-        .animation-heading {
-            opacity: 0;
-            animation: animation1 0.75 ease-out 1s forwards;
-        }
-
-        @keyframes animation1 {
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @media (min-width: 320px) and (max-width: 1224px) {
-            .profile-pic {
-                display: none;
-            }
-            .hero .name-title, .hero .right-section, .contents {
-                padding: 3rem;
-            }
-            .hero .name-title {
-                position: relative;
-                left: auto;
-            }
-            .hero, .row-section {
-                display: block;
-            }
-           
-            .row-section.row2 {
-                display: flex;
-                flex-direction: column-reverse;
-            }
-            .cards {
-                margin-top: 10px;
-            }
-            .cards .card-item {
-                margin-left: 0.5rem;
-                margin-right: 0.5rem;
-                font-size: 1.5rem;
-            }
-            .name-title h1 {
-                font-size: 4rem;
-            }
-            .name-title h2 {
-                font-size: 2.5rem;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.2rem;
-            }
-            h3 {
-                font-size: 1rem;
-            }
-            p, ul, li, .quote-by-position {
-                font-size: 1rem;
-            }
-            .small-section p {
-                text-align: left;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
@@ -339,6 +87,12 @@
             <h1>Swaroop Bhat</h1>
             <h2>Backend Technical Lead</h2>
             <hr>
+            <div class="anchor-links">
+                <ul class="flex-list">
+                    <li><a href="#highlights-experience">Highlights & Experience</a></li>
+                    <li><a href="#competencies-services">Competencies & Services</a></li>
+                </ul>
+            </div>
         </div>
         <div class="right-section">
             <h1 class="apply-animation-heading">
@@ -354,14 +108,6 @@
                     technical excellence.
                 </p>
                 <p class="apply-animation-content">
-                    I’m known for driving innovation,
-                    strategic problem-solving, and creating
-                    collaborative environments that enable
-                    teams to deliver impactful results. My approach focuses
-                    on guiding teams through complex technical challenges to
-                    achieve consistently high standards.
-                </p>
-                <p class="apply-animation-content">
                     If you’re looking for someone to bring your ideas to
                     life through expert collaboration and dedicated team
                     effort, feel free to reach out via email—I’d be excited
@@ -370,17 +116,38 @@
             </div>
         </div>
     </section>
-    <section class="row-section row1">
+    <section id="highlights-experience" class="row-section row1">
         <section class="dark-section width-55">
             <div class="contents">
                 <div class="content-item">
                     <h1 class="remove-top-margin apply-animation-heading"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Highlights</h1>
-                     <div class="companies apply-animation-content">
+                     <div class="highlights apply-animation-content">
                         <div>
                             <ul>
-                                <li>Proficient in writing secure, fault-tolerant, and well-tested code that 10000+ vendors use to order their products.</li>
-                                <li>Provided out-of-the-box solutions to several complex problems.</li>
-                                <li>Experienced in mentoring and communicating technical solutions to all levels of the audience.</li>
+                                <li>
+                                    Skilled in developing secure,
+                                    fault-tolerant, and scalable code used
+                                    by over 40,000+ vendors for product
+                                    ordering.
+                                </li>
+                                <li>
+                                    Deep understanding of the software
+                                    development lifecycle and a strong
+                                    commitment to fostering team cohesion.
+                                </li>
+                                <li>
+                                    Guiding and prioritizing the
+                                    organization’s tech initiatives to ensure
+                                    alignment with strategic goals and drive
+                                    impactful results.
+                                </li>
+                                <li>
+                                    Experienced in simultaneously leading
+                                    multiple technical teams and consistently
+                                    delivering clear, effective communication
+                                    of technical solutions across diverse
+                                    audience levels.
+                                </li>
                             </ul>
                         </div>
                      </div>
@@ -442,7 +209,7 @@
             </div>
         </section>
     </section>
-    <section class="row-section row2">
+    <section id="competencies-services" class="row-section row2">
         <section class="light-section width-55">
             <div class="contents">
                 <div class="content-item">
